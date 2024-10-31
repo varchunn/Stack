@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 template<typename Essence>
 class Stack
 {
@@ -74,11 +74,11 @@ int main()
     myFlux.pushTime(2);
     myFlux.pushTime(3);
 
-    std::cout << "Peak: " << myFlux.peakTime() << std::endl;
+    cout << "Peak: " << myFlux.peakTime() << std::endl;
     myFlux.pullTime();
-    std::cout << "Peak after pull: " << myFlux.peakTime() << std::endl;
+    cout << "Peak after pull: " << myFlux.peakTime() << std::endl;
 
-    std::cout << "Size: " << myFlux.sizeOfFlux() << std::endl;
+    cout << "Size: " << myFlux.sizeOfFlux() << std::endl;
     return 0;
 }
 
